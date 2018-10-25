@@ -4,10 +4,23 @@
     "pages/about/about"
   ],
   "window": {
-    "backgroundColor": "#F6F6F6",
     "backgroundTextStyle": "light",
-    "navigationBarBackgroundColor": "#F6F6F6",
+    "navigationBarBackgroundColor": "#458B74",
     "navigationBarTitleText": "平安保险",
-    "navigationBarTextStyle": "black"
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "list": [{
+      "pagePath": "pages/home/home",
+      "text": "首页",
+      "iconPath": "images/application64.png",
+      "selectedIconPath": "images/application64.png"
+    },
+    {
+      "pagePath": "pages/about/about",
+      "text": "关于",
+      "iconPath": "images/info-64.png",
+      "selectedIconPath": "images/info-64.png"
+    }]
   }
 }
