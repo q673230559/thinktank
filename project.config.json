@@ -1,5 +1,5 @@
 {
-	"miniprogramRoot": "wxapp-calc-master/",
+	"miniprogramRoot": "safety/",
 	"cloudfunctionRoot": "cloudfunctions/",
 	"setting": {
 		"urlCheck": true,
