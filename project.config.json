@@ -1,5 +1,9 @@
 {
+<<<<<<< HEAD
   "miniprogramRoot": "mytest/",
+=======
+	"miniprogramRoot": "safety/",
+>>>>>>> master
 	"cloudfunctionRoot": "cloudfunctions/",
 	"setting": {
 		"urlCheck": true,
