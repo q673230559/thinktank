@@ -10,7 +10,43 @@ Page({
     autoplay: false,
     interval: 5000,
     duration: 1000,
-    imageWidth: wx.getSystemInfoSync().windowWidth,//图片宽度
+    proList: [
+    {
+      logo: "/images/logo.jpg",
+      title: "精英贷",
+      desc: "22周岁以上即可\n最快3小时下款"
+    },
+      {
+        logo: "/images/logo.jpg",
+        title: "精英贷",
+        desc: "22周岁以上即可\n最快3小时下款"
+      },
+      {
+        logo: "/images/logo.jpg",
+        title: "精英贷",
+        desc: "22周岁以上即可\n最快3小时下款"
+      },
+      {
+        logo: "/images/logo.jpg",
+        title: "精英贷",
+        desc: "22周岁以上即可\n最快3小时下款"
+      },
+      {
+        logo: "/images/logo.jpg",
+        title: "精英贷",
+        desc: "22周岁以上即可\n最快3小时下款"
+      }
+    ]
+  },
+  onLoad: function(){
+    this.setData({
+      test: "01",
+    })
+  },
+  toDetail: function(e){
+    console.log(e);
+    var index=e.currentTarget.dataset.index;
+    console.log(index);
   }
  
 })
