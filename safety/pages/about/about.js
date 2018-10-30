@@ -5,14 +5,20 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    userInfo: {}
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    var app = getApp();
+    var that=this;
+    app.getUserInfo(function(userInfo){
+      that.setData({
+        userInfo:userInfo
+      })
+    });
   },
 
   /**
@@ -39,7 +45,8 @@ Page({
   /**
    * 生命周期函数--监听页面卸载
    */
-  onUnload: function () {
+  onUnload: function () { 
+    app.getUserInfo();
 
   },
 
@@ -61,6 +68,6 @@ Page({
    * 用户点击右上角分享
    */
   onShareAppMessage: function () {
-
+    
   }
 })
